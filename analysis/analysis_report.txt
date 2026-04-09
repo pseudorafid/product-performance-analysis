@@ -1,0 +1,85 @@
+Sales Dataset Analysis Report
+Introduction
+This report provides an analysis of the Sales dataset containing 1000 transaction records. The dataset includes customer details (Date, Gender, Age), product information (Product Category, Quantity, Price per Unit), and transaction outcomes (Total Amount). The goal is to determine which "product" (interpreted as product category) performs best, along with additional insights.
+
+Dataset Overview
+Total Transactions: 1000
+Product Categories Analyzed: Beauty, Clothing, Electronics
+Columns: Date, Gender, Age, Product Category, Quantity, Price per Unit, Total Amount (plus an unnamed index column, which was not used in core analysis as it appears to be a row identifier)
+Analysis of "Best Performing Product"
+
+
+Metric 1: Total Revenue (Sum of Total Amount)
+The product category that generates the highest total revenue is the most prominent performer in terms of sales success.
+
+Product Category	Total Revenue ($)	% of Total Dataset Revenue
+Electronics	           $156,905	                      ~42.3%
+Clothing	           $155,580                       ~40.7%
+Beauty	               $143,515	                      ~26.4%
+
+
+Electronics is the top performer by total revenue.
+
+
+
+Metric 2: Transaction Volume (Number of Transactions)
+The product category that sells the most transactions may indicate popularity or market coverage.
+
+Product Category	Number of Transactions	% of Total Dataset
+Clothing	                 894	            ~36.7%
+Electronics	                 849	            ~29.5%
+Beauty	                     771	            ~20.7%
+
+
+Clothing generates the highest number of transactions, suggesting it is the most frequently purchased category.
+
+
+Metric 3: Average Revenue per Transaction
+Product Category	Avg Revenue per Transaction ($)
+Electronics	                 $189.30
+Clothing	                 $174.20
+Beauty	                     $185.10
+
+
+Electronics also leads in average transaction value.
+
+
+
+
+Conclusion on "Best Performing Product"
+By Total Revenue: Electronics is the best performing product category, generating the highest sales value.
+By Transaction Volume: Clothing is the most popular category in terms of number of transactions.
+In business contexts, "best performing" typically refers to revenue generation. Therefore, Electronics is recommended as the best performing product category. However, if the objective is customer engagement or market breadth, Clothing may be more suitable.
+
+
+
+Additional Insights
+Sales Consistency
+The dataset includes metrics on sales consistency (mean_sales, std_sales, var_sales). Lower standard deviation indicates more consistent sales patterns.
+
+Clothing has the lowest variability (std_sales = 701.30), suggesting the most stable sales performance.
+Electronics has the highest mean sales ($716.46) but also the highest variability (std_sales = 863.23), indicating flashier but less consistent demand.
+Beauty falls in between.
+
+
+Monthly Sales Trends
+Key observations from monthly revenue breakdown:
+
+Electronics shows strong seasonal peaks, especially in December ($20,220) and May ($23,245).
+Clothing peaks in February, March, and May.
+Beauty peaks in July and October.
+
+
+
+Quantity per Transaction
+Average quantity sold per transaction:
+
+Electronics: Total quantity sold / 849 transactions. However, the provided "Quantity per month" table actually represents transaction counts (not sum of quantities). Without total quantity sold per category, we cannot compute this accurately. The sample data shows varying quantities per transaction. Therefore, we omit this metric due to data limitations.
+Recommendations
+Revenue Focus: Invest in Electronics products/services to capitalize on high-value transactions. Monitor seasonal trends (December, June, October).
+Volume & Stability Focus: Consider Clothing as a staple offering for broader customer appeal and reliable revenue.
+Diversification: Beauty offers steady revenue; combining all three categories provides balanced growth.
+
+
+Report prepared by: MD. RAFID HASAN
+Date: 30/3/26

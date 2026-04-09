@@ -1,0 +1,183 @@
+First 5 rows...........
+
+   Unnamed: 0        Date  Gender  Age Product Category  Quantity  Price per Unit  Total Amount
+0           0  2023-11-24    Male   34           Beauty         3              50           150
+1           1  2023-02-27  Female   26         Clothing         2             500          1000
+2           2  2023-01-13    Male   50      Electronics         1              30            30
+3           3  2023-05-21    Male   37         Clothing         1             500           500
+4           4  2023-05-06    Male   30           Beauty         2              50           100
+
+
+There is no missing values in this DataSet
+
+Data info......
+
+RangeIndex: 1000 entries, 0 to 999
+Data columns (total 8 columns):
+ #   Column            Non-Null Count  Dtype
+---  ------            --------------  -----
+ 0   Unnamed: 0        1000 non-null   int64
+ 1   Date              1000 non-null   str
+ 2   Gender            1000 non-null   str
+ 3   Age               1000 non-null   int64
+ 4   Product Category  1000 non-null   str
+ 5   Quantity          1000 non-null   int64
+ 6   Price per Unit    1000 non-null   int64
+ 7   Total Amount      1000 non-null   int64
+dtypes: int64(5), str(3)
+memory usage: 62.6 KB
+
+Data Description.........
+
+       Unnamed: 0         Age     Quantity  Price per Unit  Total Amount
+count  1000.000000  1000.00000  1000.000000     1000.000000   1000.000000
+mean    499.500000    41.39200     2.514000      179.890000    456.000000
+std     288.819436    13.68143     1.132734      189.681356    559.997632
+min       0.000000    18.00000     1.000000       25.000000     25.000000
+25%     249.750000    29.00000     1.000000       30.000000     60.000000
+50%     499.500000    42.00000     3.000000       50.000000    135.000000
+75%     749.250000    53.00000     4.000000      300.000000    900.000000
+max     999.000000    64.00000     4.000000      500.000000   2000.000000
+
+Column Names:
+
+1. Unnamed: 0
+2. Date
+3. Gender
+4. Age
+5. Product Category
+6. Quantity
+7. Price per Unit
+8. Total Amount
+
+Top sold Products
+
+Electronics    156905
+Clothing       155580
+Beauty         143515
+
+volume per Category
+
+Clothing       894
+Electronics    849
+Beauty         771
+
+Sales Consistency:
+
+                  mean_sales   std_sales      var_sales
+Product Category
+Clothing          670.603448  701.304559  491828.084126
+Beauty            703.504902  794.345886  630985.387231
+Electronics       716.461187  863.229659  745165.444841
+
+
+Sells in every category per month
+
+Apr         Beauty              11905
+            Clothing            13940
+            Electronics          8025
+Aug         Beauty               9790
+            Clothing            12455
+            Electronics         14715
+Dec         Beauty              12400
+            Clothing            12070
+            Electronics         20220
+Feb         Beauty              14035
+            Clothing            14560
+            Electronics         15465
+Jan         Beauty              13930
+            Clothing            13125
+            Electronics          9925
+Jul         Beauty              16090
+            Clothing             8250
+            Electronics         11125
+Jun         Beauty              10995
+            Clothing            10170
+            Electronics         15550
+Mar         Beauty              10545
+            Clothing            15065
+            Electronics          3380
+May         Beauty              12450
+            Clothing            17455
+            Electronics         23245
+Nov         Beauty               9700
+            Clothing            15200
+            Electronics         10020
+Oct         Beauty              15355
+            Clothing            13315
+            Electronics         17910
+Sep         Beauty               6320
+            Clothing             9975
+            Electronics          7325
+
+
+Quantity OF every category per month
+
+
+Month_Name  Product Category
+Apr         Beauty               69
+            Clothing             93
+            Electronics          52
+Aug         Beauty               62
+            Clothing             78
+            Electronics          87
+Dec         Beauty               62
+            Clothing             53
+            Electronics          92
+Feb         Beauty               68
+            Clothing             75
+            Electronics          71
+Jan         Beauty               62
+            Clothing             72
+            Electronics          65
+Jul         Beauty               70
+            Clothing             45
+            Electronics          61
+Jun         Beauty               66
+            Clothing             67
+            Electronics          64
+Mar         Beauty               51
+            Clothing            111
+            Electronics          32
+May         Beauty               65
+            Clothing             97
+            Electronics          97
+Nov         Beauty               63
+            Clothing             69
+            Electronics          73
+Oct         Beauty               83
+            Clothing             74
+            Electronics          95
+Sep         Beauty               50
+            Clothing             60
+            Electronics          60
+
+per Month top categories:
+
+1         Apr         Clothing         13940
+5         Aug      Electronics         14715
+8         Dec      Electronics         20220
+11        Feb      Electronics         15465
+12        Jan           Beauty         13930
+15        Jul           Beauty         16090
+20        Jun      Electronics         15550
+22        Mar         Clothing         15065
+26        May      Electronics         23245
+28        Nov         Clothing         15200
+32        Oct      Electronics         17910
+34        Sep         Clothing          9975
+
+performers revenue in ascending order
+
+  Product Category  Total Amount
+0           Beauty        143515
+1         Clothing        155580
+2      Electronics        156905
+
+performers Quantity in ascending order
+
+  Product Category  Quantity
+0           Beauty       771
+2      Electronics       849
+1         Clothing       894
+
